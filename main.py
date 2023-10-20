@@ -1,6 +1,9 @@
 import unittest
 import numeroromano as nr
 
+if __name__ == '__main__':
+        unittest.main()
+
 class TestConverteRomano(unittest.TestCase):
 
     def test_I(self):
@@ -20,6 +23,3 @@ class TestConverteRomano(unittest.TestCase):
 
     def test_XXIV(self):
         self.assertEqual(nr.converte('XXIV'), 24)
-
-    if __name__ == '__main__':
-        unittest.main()
